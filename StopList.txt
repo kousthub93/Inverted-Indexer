@@ -1,0 +1,40 @@
+1.the
+2.of
+3.and
+4.in
+5.to
+6.a
+7.is
+8.as
+9.for
+10.on
+11.by
+12.with
+13.that
+14.was
+15.are
+16.from
+17.or
+18.be
+19.it
+20.at
+21.an
+22.also
+23.were
+24.so
+25.has
+26.but
+27.been
+
+- Main aim of creating stop list is to avoid words that occur huge number of times (tf) in the corpus and hence losing its   importance.
+- But the tf should not only be the deciding factor. Stop words should include words such that even after removing those
+  from a sentence, it does not alter the overall meaning of that sentence.
+- I have chosen above stop words based on its high occurence and its importance in the sentences in which it appears.
+- For instance, 'edit' appears around 8378 time. Eventhough it occurs more frequently, it should not be a part of stop
+  list since it could alter the overall meaning of the sentenc if removed from the corpus
+- 'or' appears 7728 times,'be' appears 7464,'it' appears 7398. Eventhough these words occur less frequently than 'edit',
+  its made as part of the stop list since it does not alter the overall meaning of the sentence when removed.
+- If cut-off value chosen is higher than 'edit' tf, then 'or','it' will not be a part of stop list. So, a value lower than
+  7398 can be chosen. To avoid, 'edit' being part of stop list, the word can be compared with a manually preapared stop   list so that 'edit' will not be a part of stop list.
+- So, by examining all the above scenarios, I would chose cut-off value as 7000.
+
